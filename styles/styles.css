@@ -1,0 +1,88 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: 1rem;
+	line-height: 0.3rem;
+	background-color: #212121;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-family: 'Pacifico', cursive;
+	font-size: 2.5rem;
+	color: #a51c6a;
+	text-transform: capitalize;
+	margin-bottom: 2rem;
+}
+
+p {
+	text-transform: capitalize;
+	margin: 0;
+}
+
+canvas {
+	margin-top: .8rem;
+	border: 1px solid black;
+	border-radius: 5px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.egg {
+	width: 1.9rem;
+	height: 1.9rem;
+	vertical-align: middle;
+	margin-right: .5rem;
+}
+
+.canvas-container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.description {
+	position: absolute;
+	top: 5rem;
+	left: 0;
+	width: 100%;
+	color: white;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#loading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 5rem;
+	height: 5rem;
+	display: none;
+}
+
+#start,
+#playAgain {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #a51c6a;
+	color: #f5f5f5;
+	border: none;
+	border-radius: 10px;
+	padding: .5rem 1rem;
+	font-size: 1rem;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+#playAgain {
+	display: none;
+}
+
+#start:hover,
+#playAgain:hover {
+	background-color: #f5f5f5;
+	color: #a51c6a;
+}
