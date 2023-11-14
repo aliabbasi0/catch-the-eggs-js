@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game Project | FWD35</title>
+    <!-- external files -->
+    <link rel="stylesheet" href="styles/normalize-fwd.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <main>
+        <div class="canvas-container">
+            <canvas id="myCanvas" height="700" width="890"></canvas>
+            <div class="description" id="description">
+                <h1>catch the eggs!</h1>
+                <h2>INSTRUCTIONS</h2>
+                <h3>Press or Hold "&#8592;" or "A" to move Left</h3>
+                <h3>Press or Hold "&#8594;" or "D" to move Right</h3>
+                <p><img class="egg" src="images/brownegg.png" alt="brown egg"> +5 points</p>
+                <p><img class="egg" src="images/goldenegg.png" alt="golden egg">+20 bonus points </p>
+                <p><img class="egg" src="images/rotten.png" alt="rotten egg"> -15 points</p>
+            </div>
+            <div id="loading">
+                <img src="images/loading.gif" alt="loading gif">
+            </div>
+            <input type="button" id="start" value="start the game">
+            <input type="button" id="playAgain" value="play again?">
+        </div>
+    </main>
+    <audio id="chickenSound" src="sounds/chicken.mp3" preload="auto" loop></audio>
+</body>
+
+</html>
